@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto w-9/12 mt-10">
+        <div class="deposited-amount bg-green-400 p-6 rounded-lg" id="deposited-amount">
+            <h2 class="text-2xl text-white">Deposit</h2>
+            <h1 class="text-5xl text-white">$<span id="deposite-total">00</span></h1>
+        </div>
+        <div class="deposited-amount bg-amber-500 p-6 rounded-lg ">
+            <h2 class="text-2xl text-white">Withdraw</h2>
+            <h1 class="text-5xl  text-white">$<span id="withdraw-total">00</span></h1>
+        </div>
+        <div class="deposited-amount bg-purple-500 p-6 rounded-lg">
+            <h2 class="text-2xl text-white">Balance</h2>
+            <h1 class="text-5xl text-white">$<span id="balance-total">1240</span></h1>
+        </div>
+    </section>
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto w-9/12 mt-10">
+        <div class="deposited-amount bg-blue-500 p-6 rounded-lg">
+            <h2 class="text-2xl text-white">Please deposit</h2>
+            <input type="text" name="" id="input-deposit" class="mb-2 md:w-64 p-1 mt-5 mb-2 block">
+            <p class="text-1xl text-white md:w-64 hidden" id="number-error-deposit">Please enter a valid number!!</p>
+            <p></p>
+            <p class="text-1xl text-white md:w-64 hidden" id="empty-error-deposit">Please enter at least one number!!
+            </p>
+            <p></p>
+            <button class="bg-green-500 hover:bg-green-600 mb-4 mt-4 px-4 py-1 rounded text-neutral-50 "
+                id="btn-deposite">Deposite</button>
+        </div>
+        <div class="withdraw-amount bg-rose-400 p-6 rounded-lg ">
+            <h2 class="text-2xl text-white">Please withdraw</h2>
+            <input type="text" name="" id="input-withdraw" class="mb-2 md:w-64 p-1 mt-5 mb-2 block">
+            <button class="bg-blue-600 hover:bg-blue-700 mb-4 mt-4 px-4 py-1 rounded text-neutral-50 "
+                id="btn-withdraw">Withdraw</button>
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+
+</body>
+
+</html>
